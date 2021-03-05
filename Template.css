@@ -1,0 +1,241 @@
+*{
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+/* navigation bar */
+.title-open{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://www.cazbah.net/wp-content/uploads/2009/03/agenda-analysis-business-990818.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Padauk', sans-serif;
+}
+.logo-nav{
+    letter-spacing: 5px;
+    font-weight: 800;
+    width: 20%;
+    text-align: end;
+    font-size: 1.5rem;
+}
+.list-nav{
+    display: flex;
+    list-style: none;
+}
+.list-nav > li{
+    padding: 5px;
+    margin: 0px 3px;
+    border-bottom: 2px solid white;
+    transition: all 0.3ms;
+}
+.list-nav > li:hover{
+    cursor: pointer;
+    color: rgb(84, 156, 163);
+    transform: translate(0%, 10%);
+    font-size: 1.2rem;
+}
+.list-nav > li:first-child{
+    margin-left: 0;
+}
+.fa-icon{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+.fa-icon > li{
+    padding: 10px;
+    transition: all 0.3ms;
+}
+.fa-icon > li:hover{
+    color: rgb(230, 215, 59);
+    cursor: pointer;
+    transform: translate(0%, 10%);
+    font-size: 1.5rem;
+}
+.content-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    text-align: center;
+}
+.content-nav > p:first-child{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.content-nav > p:last-child{
+    font-size: 1.2rem;
+    width: 75%;
+    text-align: justify;
+}
+/* TITLE SUCCESS */
+.title-success{
+    height: 60vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 5rem;
+    width: 80%;
+    margin: 10% 10% 0% 10%; 
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.circle-outside{
+    display: flex;
+    justify-content: center;
+}
+.circle-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* width: 150px;
+    height: 150px; */
+    /* border-radius: 50%;
+    background-color: red; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    transition: all 2s;
+    margin-bottom: 10%;
+}
+.circle-title:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: rgb(253, 7, 13);
+}
+/* title-solution */
+.title-solution{
+    text-align: center;
+    margin: 0% 25%;
+    /* line-height: 30px; */
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    font-family: 'Work Sans', sans-serif;
+}
+.title-solution > p:first-child{
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+.title-solution > p:last-child{
+    line-height: 30px;
+}
+@media screen and (max-width: 320px){
+    /* fix navigation bar */
+    .title-open{
+        height: 60vh;
+    }
+    .logo-nav{
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    .list-nav > li, .fa-icon > li{
+        padding: 3px;
+        font-size: 0.4rem;
+    }
+    .list-nav > li:hover, .fa-icon > li:hover{
+        font-size: 0.5rem;
+    }
+    .content-nav > p:first-child{
+        font-size: 1.2rem;
+    }
+    .content-nav > p:last-child{
+        font-size: 0.5rem;
+    }
+    /* fix title circle */
+    .title-success{
+        font-size: 1.5rem;
+        height: 20vh;
+    }
+    .circle-title{
+        width: 100px;
+        height: 100px;
+        font-size: 0.7rem;
+    }
+    .circle-title:hover{
+        transform: scale(1.1);
+    }
+    /* Fix solution */
+    .title-solution{
+        font-size: 0.5rem;
+        margin: 0% 20%;
+    }
+    .title-solution > p:last-child{
+        line-height: 10px;
+    }
+    .title-solution > p:first-child{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 730px){
+    /* fix navigation bar */
+    .title-open{
+        height: 60vh;
+    }
+    .logo-nav{
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+    .list-nav > li, .fa-icon > li{
+        padding: 3px;
+        font-size: 0.5rem;
+    }
+    .list-nav > li:hover, .fa-icon > li:hover{
+        font-size: 0.6rem;
+    }
+    .content-nav > p:first-child{
+        font-size: 1.8rem;
+    }
+    .content-nav > p:last-child{
+        font-size: 0.8rem;
+    }
+    /* fix title circle */
+    .title-success{
+        font-size: 2.5rem;
+        height: 40vh;
+        /* width: 70%;
+        margin: 10% 15% 0% 15%; */
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    /* fix solution  */
+    .title-solution{
+        font-size: 0.8rem;
+        margin: 0% 20%; 
+        height: 100%;
+    }
+    .title-solution > p:first-child{
+        font-size: 2rem;
+    }
+    .title-solution > p:last-child{
+        line-height: 20px;
+    }
+}

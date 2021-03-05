@@ -1,0 +1,42 @@
+html{
+    margin: auto 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right top, #D3D3D3,#2D3436);
+    color: white;
+}
+button{
+    width: 25%;
+    padding: 2% 3%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    background: linear-gradient(to right bottom, #000000,#756213);
+    border: none;
+    transition: all 2s;
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left top, #5D4954,#FFA69E);
+    color: black;
+    transform: scale(1.2);
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    button{
+        width: 30%;
+        font-size: 1rem;
+    }
+}
